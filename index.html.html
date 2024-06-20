@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>musicology</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+
+    .banner {
+        height: 100vh;
+        width: auto;
+        background-image: url(main.png);
+        background-size: cover;
+        /* position: relative; */
+    }
+
+    .nev {
+        height: 75px;
+        background-color: #303030;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .nevbar {
+        height: 90px;
+        width: auto;
+        padding-top: 20px;
+
+    }
+
+    .nev a {
+        font-size: 25px;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-weight: 400;
+        font-family: "Oswald";
+        text-decoration: none;
+        padding: 0px 20px;
+    }
+
+    .icon {
+        margin: 20px 20px;
+
+    }
+
+    .icon img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .section-1-body {
+        height: 370px;
+        width: 593px;
+        /* background-color: aqua; */
+    }
+
+    .section-1-body h1 {
+        font-size: 74px;
+        color: #ffffff;
+        font-weight: 200;
+        font-family: "Oswald";
+        padding-top: 220px;
+        padding-left: 60px;
+    }
+
+    .section-1-body p {
+        font-size: 27px;
+        color: #ffffff;
+        font-weight: 200;
+        font-family: "Montserrat";
+        padding-left: 60px;
+        padding-top: 10px;
+    }
+
+
+
+    .but button {
+        background-color: #e8631c;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-family: "Oswald";
+        color: #ffffff;
+        padding: 10px 10px;
+        margin-left: 60px;
+        margin-top: 20px;
+    }
+
+    .section-2 {
+        height: 100vh;
+        background-color: #e8631c;
+        padding-top: 50px;
+
+    }
+
+    .Shape img {
+        height: 700px;
+        width: 700px;
+        position: absolute;
+        color: #303030;
+        margin-top: -300px;
+        margin-left: -200px;
+    }
+
+
+    .section-2-body h1 {
+        font-size: 50px;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-family: "Oswald";
+        text-align: center;
+        padding-top: 25px;
+    }
+
+    .section-2-body p {
+        font-size: 30px;
+        color: #ffffff;
+        font-family: "Montserrat";
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    .section-2-main {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 70px;
+        padding-top: 34px;
+
+    }
+
+    .section-2-card {
+        width: 230px;
+        height: 315px;
+        background-color: #303030;
+    }
+
+    .section-2-card h1 {
+        font-size: 30px;
+        color: #ffffff;
+        font-family: "Oswald";
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .section-2-card p {
+        font-size: 20px;
+        color: #ffffff;
+        font-family: "Montserrat";
+        text-align: center;
+    }
+
+    .section-3 {
+        height: 100vh;
+        background-color: #303030;
+
+    }
+
+    .section-3-Shape img {
+        height: 700px;
+        width: 700px;
+        position: absolute;
+        margin-top: -200px;
+        margin-left: -210px;
+        color: #ffffff;
+
+    }
+
+    .section-3-body h1 {
+        font-size: 50px;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-family: "Oswald";
+        text-align: center;
+        padding-top: 25px;
+    }
+
+    .section-3-body p {
+        font-size: 25px;
+        color: #ffffff;
+        font-family: "Montserrat";
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .section-3-main {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 70px;
+        padding-top: 34px;
+
+    }
+
+    .section-3-card {
+        width: 230px;
+        height: 315px;
+        background-color: #e8631c;
+    }
+
+    .section-3-card img {
+        height: 58%;
+        width: 60%;
+        margin: 1px 46px;
+    }
+
+    .section-3-card h1 {
+        font-size: 30px;
+        color: #ffffff;
+        font-family: "Oswald";
+        text-align: center;
+    }
+
+    .section-3-card p {
+        font-size: 20px;
+        color: #ffffff;
+        font-family: "Montserrat";
+        text-align: center;
+    }
+
+    .section-3-card button {
+        font-size: 18px;
+        background-color: #303030;
+        color: #ffffff;
+        font-family: "Oswald";
+        text-align: center;
+        padding: 5px 30px;
+        margin: 7px 50px;
+    }
+
+    .section-4 {
+        height: 100vh;
+        display: flex;
+        background-color: #e8631c;
+    }
+
+    .section-4-Shape img {
+        height: 700px;
+        width: 590px;
+        position: absolute;
+        margin-top: -372px;
+        margin-left: 666px;
+        color: #ffffff;
+    }
+
+    .section-4-body img {
+        height: 100%;
+        width: 650px;
+    }
+
+    .section-4-contant {
+        height: 200px;
+        width: 400px;
+        margin: 180px 60px;
+
+    }
+
+
+    .section-4-contant h1 {
+        font-size: 40px;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-family: "Oswald";
+    }
+
+    .section-4-contant p {
+        font-size: 20px;
+        color: #ffffff;
+        font-family: "Montserrat";
+        padding-top: 20px;
+    }
+
+    .section-4-contant button {
+        width: 200px;
+        height: 35px;
+        border-radius: 4px;
+        background-color: #303030;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-family: "Oswald";
+        margin-top: 30px;
+    }
+
+    .section-5 {
+        height: 100vh;
+        display: flex;
+        background-color: #e8631c;
+    }
+
+    .section-5-Shape img {
+        height: 700px;
+        width: 590px;
+        position: absolute;
+        margin-top: -377px;
+        margin-left: 673px;
+        color: #ffffff;
+    }
+
+
+
+    .section-5-contant {
+        height: 200px;
+        width: 400px;
+        margin: 180px 125px;
+
+    }
+
+
+    .section-5-contant h1 {
+        font-size: 40px;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-family: "Oswald";
+    }
+
+    .section-5-contant p {
+        font-size: 20px;
+        color: #ffffff;
+        font-family: "Montserrat";
+        padding-top: 20px;
+    }
+
+    .section-5-contant button {
+        width: 200px;
+        height: 35px;
+        border-radius: 4px;
+        background-color: #303030;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-family: "Oswald";
+        margin-top: 30px;
+    }
+
+    .section-5-body img {
+        height: 100%;
+        width: 613px;
+    }
+
+    .section-6 {
+        height: 100vh;
+        background-color: #303030;
+        display: block;
+        text-align: -webkit-center;
+    }
+
+
+    .section-6-body {
+        height: 30vh;
+        width: 60%;
+        /* background-color: blue; */
+        padding: 50px 200px;
+    }
+
+    .section-6-body h1 {
+        font-size: 50px;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-family: "Oswald";
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .section-6-body p {
+        font-size: 30px;
+        color: #ffffff;
+        font-family: "Montserrat";
+        text-align: center;
+        padding-top: 20px;
+
+    }
+
+    .section-6-contant {
+        display: flex;
+        justify-content: center;
+        gap: 200px;
+        padding-top: 60px;
+    }
+
+    .section-6-contant h1 {
+        font-size: 50px;
+        color: #ffffff;
+        font-family: "Oswald";
+        text-align: center;
+    }
+
+    .section-6-contant p {
+        font-size: 20px;
+        color: #ffffff;
+        font-family: "Montserrat";
+        text-align: center;
+
+    }
+
+    .section-7 {
+        height: 150vh;
+        background-image: url(last.png);
+        /* background-repeat: no-repeat; */
+        background-size: cover;
+    }
+
+    .section-7-contant {
+        height: 150vh;
+        width: 100%;
+        background-color: #491e07c8;
+    }
+
+    .section-7-contant p {
+        font-size: 40px;
+        color: #ffffff;
+        font-family: "Nunito";
+        text-align: center;
+        padding-top: 300px;
+
+    }
+
+    .section-7-contant h1 {
+        font-size: 50px;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-weight: 600;
+        font-family: "Oswald";
+        text-align: center;
+        padding-top: 90px;
+    }
+
+    .section-8 {
+        height: 100vh;
+        width: 100%;
+
+    }
+
+    .section-8-contant {
+        height: 50vh;
+        width: 100%;
+        background-color: #e8631c;
+        text-align: -webkit-center;
+    }
+
+    .section-8-contant h1 {
+        font-size: 50px;
+        color: #ffffff;
+        font-family: "Oswald";
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .section-8-contant p {
+        font-size: 25px;
+        color: #ffffff;
+        font-family: "Montserrat";
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .wrap {
+        display: flex;
+        height: 20px;
+        width: 420px;
+        padding-top: 35px;
+        text-align: center;
+
+
+
+    }
+
+    .wrap input {
+        height: 30px;
+        width: 300px;
+    }
+
+    .wrap button {
+        height: 34px;
+        width: 116px;
+        font-size: 18px;
+        background-color: #303030;
+        color: #ffffff;
+        font-family: "Oswald";
+        text-align: center;
+    }
+
+    .footer {
+        height: 70vh;
+        /* width: auto; */
+        background-color: #303030;
+        display: flex;
+        margin-top: 46px;
+        gap: 50px;
+        /* padding: 10px 10px; */
+    }
+
+    /* .Musicology { */
+        /* height: 386px; */
+        /* width: 500px; */
+        /* background-color: #763613b6; */
+    /* } */
+
+    .footer h1 {
+        font-size: 30px;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-family: "Oswald";
+    }
+
+    .footer p{
+        font-size: 20px;
+        color: #ffffff;
+        font-family: "Montserrat";
+    }
+
+    .footer a {
+        display:block;
+        font-size: 20px;
+        color: #ffffff;
+        font-family: "Montserrat";
+        text-decoration: none;
+        margin: 25px 20px;
+    }
+    .footer .icon{
+        display: flex;
+        /* gap: 20px; */
+        justify-content: center;
+    }
+    .footer .icon img{
+        height: 50px;
+        width: 50px;
+    }
+
+
+</style>
+
+<body>
+    <div class="banner">
+        <div class="nev">
+            <div class="logo">
+                <img src="Vector Smart Object (Double Click to Edit) (3).png" alt="">
+            </div>
+            <div class="nevbar">
+                <a href="">Home</a>
+                <a href="">Product</a>
+                <a href=""> Promo</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+            </div>
+            <div class="icon">
+                <a href="">
+                    <img src="Search.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="section-1-body">
+
+            <h1>Title Here</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
+                vestibulum. </p>
+            <div class="but">
+                <button>Register Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="section-2">
+        <div class="Shape">
+            <img src="Shape (2).png" alt="">
+        </div>
+        <div class="section-2-body">
+            <h1>Dance Tour</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Vivamus lacinia odio vitae vestibulum
+                vestibulum. </p>
+        </div>
+        <div class="section-2-main">
+            <div class="section-2-card">
+                <img src="card1.png" alt="" style="height: 55%;width:100%;">
+                <div>
+                    <h1>America</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+
+            </div>
+            <div class="section-2-card">
+                <img src="card2.png" alt="" style="height: 55%;width:100%;">
+                <div>
+                    <h1>ASIA</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+
+            </div>
+            <div class="section-2-card">
+                <img src="card3.png" alt="" style="height: 55%;width:100%;">
+                <div>
+                    <h1>Australia</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-3">
+        <div class="section-3-Shape">
+            <img src="Shape (3).png" alt="">
+        </div>
+        <div class="section-3-body">
+            <h1>Pricing</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Vivamus lacinia odio vitae vestibulum
+                vestibulum. </p>
+        </div>
+        <div class="section-3-main">
+            <div class="section-3-card">
+                <img src="Place Your Image Here (Double Click to Edit) (6).png" alt="">
+                <div>
+                    <h1>BASIC</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <button>$150.00</button>
+                </div>
+
+            </div>
+            <div class="section-3-card">
+                <img src="Place Your Image Here (Double Click to Edit) (6).png" alt="">
+                <div>
+                    <h1>Professional</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <button>$200.00</button>
+                </div>
+
+            </div>
+            <div class="section-3-card">
+                <img src="Place Your Image Here (Double Click to Edit) (6).png" alt="">
+                <div>
+                    <h1>Ultimate</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <button>$250.00</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="section-4">
+        <div class="section-4-Shape">
+            <img src="Shape (4).png" alt="">
+        </div>
+        <div class="section-4-body">
+            <img src="sect3.png" alt="">
+        </div>
+        <div class="section-4-body">
+            <div class="section-4-contant">
+                <h1>AMAZING DANCE</h1>
+                <p>Lorem ipsum dolor sit amet,consecte<br>tur adipiscing elit.Vivamus lacinia<br>odio vitae vestibulum
+                    vestibulum. </p>
+                <button>read more</button>
+            </div>
+        </div>
+    </div>
+    <div class="section-5">
+        <div class="section-5-Shape">
+            <img src="Shape (5).png" alt="">
+        </div>
+        <div class="section-5-body">
+            <div class="section-5-contant">
+                <h1>Best dance</h1>
+                <p>Lorem ipsum dolor sit amet,consecte<br>tur adipiscing elit.Vivamus lacinia<br>odio vitae vestibulum
+                    vestibulum. </p>
+                <button>read more</button>
+            </div>
+        </div>
+        <div class="section-5-body">
+            <img src="sect4.png" alt="">
+        </div>
+    </div>
+    <div class="section-6">
+        <div class="section-6-body">
+            <h1>Our Statistics</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
+                vestibulum. </p>
+        </div>
+        <div class="section-6-contant">
+            <div>
+                <h1>1240+</h1>
+                <p>club</p>
+            </div>
+            <div>
+                <h1>2000+</h1>
+                <p>Active Member</p>
+            </div>
+            <div>
+                <h1>1.000+</h1>
+                <p>Community</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="section-7">
+        <div class="section-7-contant">
+            <p>Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit. Vivamus lacinia odio<br>vitae vestibulum
+                vestibulum. </p>
+            <h1>Herbert Simon</h1>
+        </div>
+
+    </div>
+    <div class="section-8">
+        <div class="section-8-contant">
+            <h1>SUBSCRIBE</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Vivamus lacinia odio vitae vestibulum
+                vestibulum. </p>
+            <div class="wrap">
+                <div>
+                    <input type="text" id="" placeholder="your email">
+                    <label class="button" for="">
+                    </label>
+                </div>
+                <button>Subscribe</button>
+            </div>
+            <div class="footer">
+                <div class="Musicology">
+                    <h1>Musicology</h1>
+                    <p>Lorem ipsum dolor sit amet, consecte <br>tur adipiscing elit. Aliquam at digni <br>ssim nunc, id
+                        maximus
+                        ex. Etiam nec <br>dignissim elit, at dignissim enim. </p>
+                    <div class="icon">
+                        <a href="#"><img src="Facebook.png" alt=""></a>
+                        <a href="#"><img src="WhatsApp.png" alt=""></a>
+                        <a href="#"><img src="Instagram.png" alt=""></a>
+                        <a href="#"><img src="Twitter.png" alt=""></a>
+                    </div>
+
+                </div>
+                <div class="About">
+                    <h1>About</h1>
+                    <a href="#">History</a>
+                    <a href="#">Our team</a>
+                    <a href="#"> Brand Guidelines</a>
+                    <a href="#">Terms & Condition</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="Services">
+                    <h1>Services</h1>
+                    <a href="#">How to Order</a>
+                    <a href="#">Our Product</a>
+                    <a href="#">Order Status</a>
+                    <a href="#">Promo</a>
+                    <a href="#">Payment Method</a>
+                </div>
+                <div class="Other">
+                    <h1>Other</h1>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Help</a>
+                    <a href="#">Privacy</a>
+                </div>
+
+            </div>
+        </div>
+</body>
+
+</html>
